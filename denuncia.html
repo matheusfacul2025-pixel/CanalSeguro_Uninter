@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal Seguro - Denúncia Anônima de Bullying</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-shield-check text-warning"></i> Canal Seguro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-warning text-dark py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold mb-3">
+                     Denúncia Anônima de Bullying
+                    </h1>
+                    <p class="lead mb-4">Todas as respostas são anônimas | Sua identidade não será solicitada</p>
+                    <div class="alert alert-dark d-inline-flex align-items-center gap-2" role="alert">
+                        <i class="bi bi-shield-lock fs-4"></i>
+                        <div>
+                            <strong>100% Anônimo</strong> - Sua identidade nunca será revelada
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); min-height: calc(100vh - 76px);">
+        <div class="container" style="padding-top: 2rem;">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-9">
+                    <form id="denunciaForm" class="needs-validation" novalidate>
+                        <!-- Tipo de Situação -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-1-circle"></i> Qual tipo de situação você deseja relatar?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="tipo1">
+                                            <input type="radio" name="tipo_situacao" id="tipo1" value="Bullying físico" required>
+                                            <div class="option-content">
+                                                <i class="bi bi-hand-thumbs-down"></i>
+                                                <span>Bullying físico</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="tipo2">
+                                            <input type="radio" name="tipo_situacao" id="tipo2" value="Bullying verbal">
+                                            <div class="option-content">
+                                                <i class="bi bi-chat-dots"></i>
+                                                <span>Bullying verbal</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="tipo3">
+                                            <input type="radio" name="tipo_situacao" id="tipo3" value="Cyberbullying">
+                                            <div class="option-content">
+                                                <i class="bi bi-phone"></i>
+                                                <span>Cyberbullying</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="tipo4">
+                                            <input type="radio" name="tipo_situacao" id="tipo4" value="Exclusão social">
+                                            <div class="option-content">
+                                                <i class="bi bi-person-x"></i>
+                                                <span>Exclusão social</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="tipo5">
+                                            <input type="radio" name="tipo_situacao" id="tipo5" value="Discriminação">
+                                            <div class="option-content">
+                                                <i class="bi bi-exclamation-triangle"></i>
+                                                <span>Discriminação (cor, aparência, gênero, orientação etc.)</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="tipo6">
+                                            <input type="radio" name="tipo_situacao" id="tipo6" value="Violência psicológica">
+                                            <div class="option-content">
+                                                <i class="bi bi-heartbreak"></i>
+                                                <span>Violência psicológica</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="tipo7">
+                                            <input type="radio" name="tipo_situacao" id="tipo7" value="Outro">
+                                            <div class="option-content">
+                                                <i class="bi bi-three-dots"></i>
+                                                <span>Outro</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <input type="text" id="outro_tipo" name="outro_tipo" class="form-control mt-3 d-none" placeholder="Especifique outro tipo de situação">
+                            </div>
+                        </div>
+
+                        <!-- Quando -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-2-circle"></i> Quando a situação aconteceu?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="quando1">
+                                            <input type="radio" name="quando" id="quando1" value="Hoje" required>
+                                            <div class="option-content">
+                                                <i class="bi bi-calendar-day"></i>
+                                                <span>Hoje</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="quando2">
+                                            <input type="radio" name="quando" id="quando2" value="Nesta semana">
+                                            <div class="option-content">
+                                                <i class="bi bi-calendar-week"></i>
+                                                <span>Nesta semana</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="quando3">
+                                            <input type="radio" name="quando" id="quando3" value="Neste mês">
+                                            <div class="option-content">
+                                                <i class="bi bi-calendar-month"></i>
+                                                <span>Neste mês</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="quando4">
+                                            <input type="radio" name="quando" id="quando4" value="Não lembro">
+                                            <div class="option-content">
+                                                <i class="bi bi-question-circle"></i>
+                                                <span>Não lembro</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="quando5">
+                                            <input type="radio" name="quando" id="quando5" value="Acontece com frequência">
+                                            <div class="option-content">
+                                                <i class="bi bi-arrow-repeat"></i>
+                                                <span>Acontece com frequência</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Onde -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-3-circle"></i> Onde ocorreu a situação?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="onde1">
+                                            <input type="radio" name="onde" id="onde1" value="Sala de aula" required>
+                                            <div class="option-content">
+                                                <i class="bi bi-door-open"></i>
+                                                <span>Sala de aula</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="onde2">
+                                            <input type="radio" name="onde" id="onde2" value="Corredor">
+                                            <div class="option-content">
+                                                <i class="bi bi-arrow-left-right"></i>
+                                                <span>Corredor</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="onde3">
+                                            <input type="radio" name="onde" id="onde3" value="Pátio">
+                                            <div class="option-content">
+                                                <i class="bi bi-tree"></i>
+                                                <span>Pátio</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="onde4">
+                                            <input type="radio" name="onde" id="onde4" value="Banheiro">
+                                            <div class="option-content">
+                                                <i class="bi bi-droplet"></i>
+                                                <span>Banheiro</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="onde5">
+                                            <input type="radio" name="onde" id="onde5" value="Entrada/saída da escola">
+                                            <div class="option-content">
+                                                <i class="bi bi-box-arrow-in-right"></i>
+                                                <span>Entrada/saída da escola</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="onde6">
+                                            <input type="radio" name="onde" id="onde6" value="Online / Redes sociais">
+                                            <div class="option-content">
+                                                <i class="bi bi-globe"></i>
+                                                <span>Online / Redes sociais</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="onde7">
+                                            <input type="radio" name="onde" id="onde7" value="Outro local">
+                                            <div class="option-content">
+                                                <i class="bi bi-three-dots"></i>
+                                                <span>Outro local</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <input type="text" id="outro_local" name="outro_local" class="form-control mt-3 d-none" placeholder="Especifique outro local">
+                            </div>
+                        </div>
+
+                        <!-- Com Quem -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-4-circle"></i> A situação aconteceu com:</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="com1">
+                                            <input type="radio" name="com_quem" id="com1" value="Comigo" required>
+                                            <div class="option-content">
+                                                <i class="bi bi-person"></i>
+                                                <span>Comigo</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="com2">
+                                            <input type="radio" name="com_quem" id="com2" value="Com outra pessoa">
+                                            <div class="option-content">
+                                                <i class="bi bi-person-badge"></i>
+                                                <span>Com outra pessoa</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="com3">
+                                            <input type="radio" name="com_quem" id="com3" value="Com um grupo de alunos">
+                                            <div class="option-content">
+                                                <i class="bi bi-people"></i>
+                                                <span>Com um grupo de alunos</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="com4">
+                                            <input type="radio" name="com_quem" id="com4" value="Prefiro não responder">
+                                            <div class="option-content">
+                                                <i class="bi bi-shield-lock"></i>
+                                                <span>Prefiro não responder</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sabe Vítima (Pergunta 5 - Condicional) -->
+                        <div class="card shadow-lg border-0 mb-4 d-none" id="pergunta5-card">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-5-circle"></i> Se foi com outra pessoa, você sabe quem é a vítima?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="vitima1">
+                                            <input type="radio" name="sabe_vitima" id="vitima1" value="Sim">
+                                            <div class="option-content">
+                                                <i class="bi bi-check-circle"></i>
+                                                <span>Sim</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="vitima2">
+                                            <input type="radio" name="sabe_vitima" id="vitima2" value="Não">
+                                            <div class="option-content">
+                                                <i class="bi bi-x-circle"></i>
+                                                <span>Não</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="vitima3">
+                                            <input type="radio" name="sabe_vitima" id="vitima3" value="Prefiro não responder">
+                                            <div class="option-content">
+                                                <i class="bi bi-shield-lock"></i>
+                                                <span>Prefiro não responder</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="text-muted">Se sim, descreva (opcional):</small>
+                                </div>
+                                <textarea id="descricao_vitima" name="descricao_vitima" class="form-control d-none" rows="3" placeholder="Descreva a vítima (opcional)"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Sabe Agressor (Pergunta 6) -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-6-circle"></i> Você sabe quem praticou o bullying?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="agressor1">
+                                            <input type="radio" name="sabe_agressor" id="agressor1" value="Sim">
+                                            <div class="option-content">
+                                                <i class="bi bi-check-circle"></i>
+                                                <span>Sim</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="agressor2">
+                                            <input type="radio" name="sabe_agressor" id="agressor2" value="Não">
+                                            <div class="option-content">
+                                                <i class="bi bi-x-circle"></i>
+                                                <span>Não</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="agressor3">
+                                            <input type="radio" name="sabe_agressor" id="agressor3" value="Prefiro não responder">
+                                            <div class="option-content">
+                                                <i class="bi bi-shield-lock"></i>
+                                                <span>Prefiro não responder</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="text-muted">Se sim, descreva (opcional):</small>
+                                </div>
+                                <textarea id="descricao_agressor" name="descricao_agressor" class="form-control d-none" rows="3" placeholder="Descreva quem praticou o bullying (opcional)"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Descrição (Pergunta 7) -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-7-circle"></i> Descreva o que aconteceu:</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted mb-3"><i class="bi bi-info-circle"></i> Escreva com suas palavras. Quanto mais detalhes, melhor.</p>
+                                <textarea name="descricao" class="form-control" rows="8" required placeholder="Descreva detalhadamente o que aconteceu..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Já Aconteceu (Pergunta 8) -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-8-circle"></i> Essa situação já aconteceu outras vezes?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="ja1">
+                                            <input type="radio" name="ja_aconteceu" id="ja1" value="Sim" required>
+                                            <div class="option-content">
+                                                <i class="bi bi-check-circle"></i>
+                                                <span>Sim</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="ja2">
+                                            <input type="radio" name="ja_aconteceu" id="ja2" value="Não">
+                                            <div class="option-content">
+                                                <i class="bi bi-x-circle"></i>
+                                                <span>Não</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="ja3">
+                                            <input type="radio" name="ja_aconteceu" id="ja3" value="Não tenho certeza">
+                                            <div class="option-content">
+                                                <i class="bi bi-question-circle"></i>
+                                                <span>Não tenho certeza</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Houve Ameaça (Pergunta 9) -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-9-circle"></i> Houve ameaça, medo ou risco de agressão?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="ameaca1">
+                                            <input type="radio" name="houve_ameaca" id="ameaca1" value="Sim" required>
+                                            <div class="option-content">
+                                                <i class="bi bi-check-circle"></i>
+                                                <span>Sim</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="ameaca2">
+                                            <input type="radio" name="houve_ameaca" id="ameaca2" value="Não">
+                                            <div class="option-content">
+                                                <i class="bi bi-x-circle"></i>
+                                                <span>Não</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="option-card" for="ameaca3">
+                                            <input type="radio" name="houve_ameaca" id="ameaca3" value="Um pouco / Não sei">
+                                            <div class="option-content">
+                                                <i class="bi bi-question-circle"></i>
+                                                <span>Um pouco / Não sei</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deseja Contato (Pergunta 10) -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-10-circle"></i> Você gostaria que a escola entrasse em contato com você para conversar?</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-warning d-flex align-items-center gap-2 mb-4" role="alert">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                    <div><strong>Lembrando:</strong> só responda se quiser. Isso deixa de ser anônimo.</div>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="contato1">
+                                            <input type="radio" name="deseja_contato" id="contato1" value="Sim">
+                                            <div class="option-content">
+                                                <i class="bi bi-check-circle"></i>
+                                                <span>Sim</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="option-card" for="contato2">
+                                            <input type="radio" name="deseja_contato" id="contato2" value="Não" checked>
+                                            <div class="option-content">
+                                                <i class="bi bi-x-circle"></i>
+                                                <span>Não</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="text-muted">Se sim, informe uma forma de contato:</small>
+                                </div>
+                                <input type="text" id="contato" name="contato" class="form-control d-none" placeholder="Informe uma forma de contato (ex: email, telefone)">
+                            </div>
+                        </div>
+
+                        <!-- Info Adicional (Pergunta 11) -->
+                        <div class="card shadow-lg border-0 mb-4">
+                            <div class="card-header bg-warning text-dark">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-11-circle"></i> Deseja acrescentar mais alguma informação?</h5>
+                            </div>
+                            <div class="card-body">
+                                <textarea name="info_adicional" class="form-control" rows="5" placeholder="Informações adicionais (opcional)"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Botões -->
+                        <div class="d-flex gap-3 justify-content-center flex-wrap mb-5">
+                            <button type="submit" class="btn btn-warning btn-lg px-5 py-3 fw-bold shadow-lg">
+                                <i class="bi bi-send-fill"></i> Enviar Denúncia
+                            </button>
+                            <button type="reset" class="btn btn-dark btn-lg px-5 py-3 fw-bold">
+                                <i class="bi bi-arrow-clockwise"></i> Limpar Formulário
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Mensagem de Sucesso -->
+                    <div id="successMessage" class="alert alert-success d-none text-center" role="alert">
+                        <h4 class="alert-heading"><i class="bi bi-check-circle-fill"></i> Denúncia enviada com sucesso!</h4>
+                        <p>Sua denúncia foi registrada de forma anônima. A equipe pedagógica tomará as providências necessárias.</p>
+                    </div>
+
+                    <!-- Mensagem de Erro -->
+                    <div id="error-message" class="alert alert-danger d-none text-center" role="alert">
+                        <h4 class="alert-heading"><i class="bi bi-exclamation-triangle-fill"></i> Erro ao enviar denúncia</h4>
+                        <p id="error-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">Canal Seguro - Projeto de Extensão Universitária</p>
+            <a href="index.html" class="text-warning text-decoration-none">
+                <i class="bi bi-arrow-left"></i> Voltar para a página inicial
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/form.js"></script>
+</body>
+</html>

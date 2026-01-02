@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal Seguro - Combate ao Bullying Escolar</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                Canal Seguro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#estatisticas">Estatísticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tipos">Tipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#como-funciona">Como Funciona</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12 text-center">
+                    <h1 class="display-2 fw-bold text-white mb-4 animate-fade-in">
+                        Canal Seguro
+                    </h1>
+                    <p class="lead text-white mb-4 fs-4">
+                        Não fique calado, diga não ao bullying!
+                    </p>
+                    <p class="text-white-50 mb-5 fs-5">
+                        Uma plataforma segura e anônima para denunciar casos de bullying no ambiente escolar. 
+                        Sua voz importa e pode fazer a diferença.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center">
+                        <a href="denuncia.html" class="btn btn-warning btn-lg px-5 py-3 fw-bold shadow-lg hover-scale">
+                            <i class="bi bi-exclamation-triangle-fill"></i> Fazer Denúncia
+                        </a>
+                        <a href="#sobre" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold hover-scale">
+                            <i class="bi bi-info-circle"></i> Saiba Mais
+                        </a>
+                    </div>
+                    <div class="mt-5 d-flex gap-4 text-white justify-content-center flex-wrap">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-shield-lock fs-4 text-warning"></i>
+                            <span>100% Anônimo</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-lightning-charge fs-4 text-warning"></i>
+                            <span>Rápido e Fácil</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-check-circle fs-4 text-warning"></i>
+                            <span>Totalmente Seguro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section id="estatisticas" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">Bullying em Números</h2>
+                <p class="lead text-muted">Dados reais sobre o bullying no Brasil</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stat-card h-100 border-0 shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <div class="stat-icon mb-3">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h3 class="display-4 fw-bold text-warning mb-3">41%</h3>
+                            <p class="card-text fw-semibold mb-2">dos estudantes brasileiros já sofreram bullying</p>
+                            <small class="text-muted">Fonte: PNAE 2019</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stat-card h-100 border-0 shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <div class="stat-icon mb-3">
+                                <i class="bi bi-heartbreak"></i>
+                            </div>
+                            <h3 class="display-4 fw-bold text-warning mb-3">1 em 5</h3>
+                            <p class="card-text fw-semibold mb-2">estudantes são vítimas de bullying regularmente</p>
+                            <small class="text-muted">Fonte: UNESCO</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stat-card h-100 border-0 shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <div class="stat-icon mb-3">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h3 class="display-4 fw-bold text-warning mb-3">59%</h3>
+                            <p class="card-text fw-semibold mb-2">dos casos de bullying ocorrem online (cyberbullying)</p>
+                            <small class="text-muted">Fonte: SaferNet Brasil</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card stat-card h-100 border-0 shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <div class="stat-icon mb-3">
+                                <i class="bi bi-eye-slash"></i>
+                            </div>
+                            <h3 class="display-4 fw-bold text-warning mb-3">70%</h3>
+                            <p class="card-text fw-semibold mb-2">das vítimas não denunciam por medo ou vergonha</p>
+                            <small class="text-muted">Fonte: IBGE</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-4 fw-bold mb-4">Sobre o Canal Seguro</h2>
+                    <p class="lead mb-4">
+                        O <strong class="text-warning">Canal Seguro</strong> é uma plataforma digital desenvolvida como 
+                        projeto de extensão universitária que visa combater o bullying no ambiente escolar através de 
+                        um sistema de denúncias anônimas e seguras.
+                    </p>
+                    <p class="mb-4">
+                        Nossa missão é proporcionar um ambiente escolar mais seguro, acolhedor e livre de violência, 
+                        oferecendo aos alunos um canal confidencial para relatar situações de bullying sem medo de retaliação.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3">
+                                <i class="bi bi-shield-lock fs-2 text-warning"></i>
+                                <div>
+                                    <h5 class="fw-bold">100% Anônimo</h5>
+                                    <p class="text-muted mb-0">Sua identidade nunca será revelada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3">
+                                <i class="bi bi-lightning-charge fs-2 text-warning"></i>
+                                <div>
+                                    <h5 class="fw-bold">Rápido e Fácil</h5>
+                                    <p class="text-muted mb-0">Processo simples e rápido</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3">
+                                <i class="bi bi-shield-check fs-2 text-warning"></i>
+                                <div>
+                                    <h5 class="fw-bold">Totalmente Seguro</h5>
+                                    <p class="text-muted mb-0">Dados protegidos e confidenciais</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex gap-3">
+                                <i class="bi bi-people fs-2 text-warning"></i>
+                                <div>
+                                    <h5 class="fw-bold">Acompanhamento</h5>
+                                    <p class="text-muted mb-0">Equipe pedagógica qualificada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image p-5">
+                        <div class="about-image-container rounded-4 overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop&q=80" 
+                                 alt="Canal Seguro - Combate ao Bullying" 
+                                 class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos de Bullying -->
+    <section id="tipos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">Tipos de Bullying</h2>
+                <p class="lead text-muted">Conheça os diferentes tipos de bullying</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card type-card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <div class="type-icon mb-3">
+                                <i class="bi bi-hand-index-thumb"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Bullying Físico</h4>
+                            <p class="text-muted">Agressões físicas, empurrões, chutes, roubo ou dano a pertences</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card type-card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <div class="type-icon mb-3">
+                                <i class="bi bi-chat-dots"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Bullying Verbal</h4>
+                            <p class="text-muted">Xingamentos, apelidos pejorativos, ameaças e comentários ofensivos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card type-card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <div class="type-icon mb-3">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Cyberbullying</h4>
+                            <p class="text-muted">Bullying através da internet, redes sociais, mensagens e aplicativos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card type-card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <div class="type-icon mb-3">
+                                <i class="bi bi-person-x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Exclusão Social</h4>
+                            <p class="text-muted">Isolamento intencional, exclusão de grupos e atividades</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card type-card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <div class="type-icon mb-3">
+                                <i class="bi bi-emoji-frown"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Violência Psicológica</h4>
+                            <p class="text-muted">Intimidação, humilhação, chantagem emocional e manipulação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card type-card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4 text-center">
+                            <div class="type-icon mb-3">
+                                <i class="bi bi-x-circle"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Discriminação</h4>
+                            <p class="text-muted">Preconceito por cor, aparência, gênero, orientação sexual ou religião</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold mb-3">Como Funciona</h2>
+                <p class="lead text-muted">Três passos simples para fazer sua denúncia</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="step-number mb-4">
+                            <span class="badge bg-warning text-dark fs-1 px-4 py-3">1</span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Preencha o Formulário</h4>
+                        <p class="text-muted">Responda as perguntas sobre a situação de forma detalhada e honesta</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="step-number mb-4">
+                            <span class="badge bg-warning text-dark fs-1 px-4 py-3">2</span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Envio Anônimo</h4>
+                        <p class="text-muted">Sua denúncia é enviada de forma totalmente anônima e segura</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="step-number mb-4">
+                            <span class="badge bg-warning text-dark fs-1 px-4 py-3">3</span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Acompanhamento</h4>
+                        <p class="text-muted">A equipe pedagógica analisa e toma as providências necessárias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-warning">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4 fw-bold mb-4">Você não está sozinho(a)</h2>
+                    <p class="lead mb-4">
+                        Se você está passando por uma situação de bullying ou conhece alguém que está, 
+                        não hesite em denunciar. Sua voz importa e pode fazer a diferença.
+                    </p>
+                    <a href="denuncia.html" class="btn btn-dark btn-lg px-5 py-3 fw-bold shadow-lg">
+                        <i class="bi bi-exclamation-triangle-fill"></i> Fazer Denúncia Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">
+                        Canal Seguro
+                    </h5>
+                    <p>Projeto de Extensão Universitária</p>
+                    <p class="text-muted">Curso: CST em Redes de Computadores</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Informações</h5>
+                    <p class="mb-1">Aluno: Matheus Ribeiro Andrade</p>
+                    <p class="mb-1">RU: 4786615</p>
+                    <p class="text-muted">Centro Universitário Internacional UNINTER</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">ODS Relacionados</h5>
+                    <p class="mb-1"><i class="bi bi-mortarboard text-warning"></i> Educação de Qualidade</p>
+                    <p class="mb-1"><i class="bi bi-arrow-down-up text-warning"></i> Redução das Desigualdades</p>
+                    <p class="mb-1"><i class="bi bi-peace text-warning"></i> Paz, Justiça e Instituições Eficazes</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 - Canal Seguro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/auth.js"></script>
+    <script>
+        // Verificar autenticação - redirecionar para login se não estiver logado como aluno
+        document.addEventListener('DOMContentLoaded', function() {
+            const token = localStorage.getItem('auth_token');
+            const userType = localStorage.getItem('user_type');
+            
+            // Se não estiver logado, redirecionar para login
+            if (!token) {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Se for admin, redirecionar para admin
+            if (userType === 'admin') {
+                window.location.href = 'admin.html';
+                return;
+            }
+            
+            // Se for aluno, pode acessar a página index
+            // Adicionar botão de logout se necessário
+            const navbar = document.querySelector('.navbar-nav');
+            if (navbar && !document.querySelector('.logout-btn')) {
+                const logoutItem = document.createElement('li');
+                logoutItem.className = 'nav-item';
+                logoutItem.innerHTML = '<a class="nav-link" href="#" onclick="logout(); return false;"><i class="bi bi-box-arrow-right"></i> Sair</a>';
+                logoutItem.classList.add('logout-btn');
+                navbar.appendChild(logoutItem);
+            }
+        });
+        
+        function logout() {
+            localStorage.removeItem('auth_token');
+            localStorage.removeItem('user_type');
+            localStorage.removeItem('username');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
